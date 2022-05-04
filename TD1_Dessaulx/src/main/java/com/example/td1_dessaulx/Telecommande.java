@@ -15,6 +15,7 @@ public class Telecommande {
         Iterator iterateur = this.lampes.iterator();
         while (iterateur.hasNext()) {
             i += 1;
+            iterateur.next();
         }
         return (i);
     }
@@ -28,10 +29,7 @@ public class Telecommande {
     }
 
     public void activerLampe(int indiceLampe){
-        Iterator iterateur = this.lampes.iterator();
-        for(int i = 0, i < indiceLampe, i++){
-            
-        }
+        this.lampes.get(indiceLampe).allumer();
     }
 
     public void desactiverLampe(int indiceLampe){
@@ -42,11 +40,19 @@ public class Telecommande {
         if (this.lampes.isEmpty()){
             throw new Error("Aucune lampe reliee a la telecommande");
         }else {
-            Iterator iterateur = this.lampes.iterator();
-            while (iterateur.hasNext()) {
-                activerLampe(iterateur.next());
+            boolean trouve = false;
+            for(int i = 0; i < this.nLampes(); i++){
+                this.lampes.get(i).allumer();
             }
         }
+    }
+
+    public String toString(){
+        String s = "";
+        for(int i = 0; i < this.nLampes(); i++){
+            s += this.lampes.get(i).toString();
+        }
+        return ("");
     }
 
     public static void main(String[] args) {
