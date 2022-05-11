@@ -2,9 +2,13 @@
 'https://plantuml.com/class-diagram
 
 class Lampe
+class Hifi
+class Appareil
 class Telecommande
 
-Lampe "*" <-- Telecommande : -lampes
-
+Appareil "*" <-- Telecommande : -appareils
+Appareil <|-- Lampe
+Appareil <|-- Hifi
+Appareil <|-- Television
 
 @enduml

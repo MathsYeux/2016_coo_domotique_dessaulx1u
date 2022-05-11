@@ -28,17 +28,17 @@ public class Telecommande {
         this.appareils.add(a);
     }
 
-    public void activerLampe(int indiceLampe){
+    public void activerAppareil(int indiceLampe){
         this.appareils.get(indiceLampe).allumer();
     }
 
-    public void desactiverLampe(int indiceLampe){
+    public void desactiverAppareil(int indiceLampe){
         this.appareils.get(indiceLampe).eteindre();
     }
 
     public void activerTout(){
         if (this.appareils.isEmpty()){
-            throw new Error("Aucune lampe reliee a la telecommande");
+            throw new Error("Aucun appareil reliee a la telecommande");
         }else {
             boolean trouve = false;
             for(int i = 0; i < this.nAppareils(); i++){

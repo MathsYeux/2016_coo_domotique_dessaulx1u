@@ -38,7 +38,7 @@ public class TestTelecommande {
         Telecommande telecommande = new Telecommande();
         Lampe l1 = new Lampe("lampe1");
         telecommande.ajouterAppareil(l1);
-        telecommande.activerLampe(0);
+        telecommande.activerAppareil(0);
 
         assertEquals(1,telecommande.nAppareils(),"il doit y avoir 1 lampe");
 
