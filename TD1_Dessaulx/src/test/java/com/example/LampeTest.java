@@ -38,7 +38,7 @@ public class LampeTest {
 
 		// verification
 		int res = l.getIntensite();
-		assertEquals(10, res, "apres allumer(), la lampe devrait etre allumee");
+		assertEquals(100, res, "apres allumer(), la lampe devrait etre allumee");
 	}
 
 	@Test
@@ -54,7 +54,7 @@ public class LampeTest {
 
 		// verification
 		int res = l.getIntensite();
-		assertEquals(10,res,"apres allumer, la lampe devrait etre allumee");
+		assertEquals(100,res,"apres allumer, la lampe devrait etre allumee");
 	}
 
 	@Test

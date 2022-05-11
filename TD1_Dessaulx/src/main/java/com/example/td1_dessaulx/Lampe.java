@@ -11,4 +11,9 @@ public class Lampe extends Appareil {
     public String toString(){
         return (this.nom + " : " + this.intensite);
     }
+
+    @Override
+    public void allumer () {
+        this.intensite = 100;
+    }
 }

@@ -1,0 +1,47 @@
+TD7
+Question 1 :
+Voir les différentes classes du projet
+
+Question 2 :
+Voir le fichier "diagramme" dans le projet
+
+Question 3 : 
+J'ai créé une classe Appareil, fais en sorte que Telecommande ne fonctionne qu'avec cette classe.
+Lampe et Hifi sont donc maintenant des extensions de Appareil.
+
+Question 4 :
+Voir le fichier "diagramme" dans le projet
+
+Question 5 :
+Oui, pour activerAppareil() et eteindreAppareil()
+Je pense que le code est facilement maintenable, en grande partie grâce à la classe Appareil,
+qui permet de ne pas avoir à modifier Telecommande quand on rajoute un type d'appareil par exemple.
+
+Question 6 :
+Voir diagramme
+Si besoin d'une nouvelle méthoe, il faudra tout de même la rajouter dans télécommande,
+si la méthode est spécifique à un type d'appareil (baisserSon ou changerChaine par exemple)
+il faudra la rajouter dans télécommande sans passer par appareil.
+
+Question 7 :
+Telecommande permet de contrôler les différents appareils
+
+Question 8 :
+Visiblement je l'ai déjà fait :)
+
+Question 9 :
+Rien à dire sur cette question
+
+Question 10 :
+Rien ne change
+
+Question 11 :
+C'est fait
+
+Question 12 :
+Rien ne change
+
+Question 13 :
+-Créer la classe télévision extends appareil
+-coder les méthodes qui n'y sont pas déjà (changerChaine par exemple)
+-implémenter ces méthodes dasn télécommande

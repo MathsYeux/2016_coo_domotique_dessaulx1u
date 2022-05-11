@@ -40,12 +40,7 @@ public class TestTelecommande {
         telecommande.ajouterAppareil(l1);
         telecommande.activerAppareil(0);
 
-        assertEquals(1,telecommande.nAppareils(),"il doit y avoir 1 lampe");
-
-        Lampe l2 = new Lampe("lampe2");
-        telecommande.ajouterAppareil(l2);
-
-        assertEquals(2,telecommande.nAppareils(),"il doit y avoir 2 lampe");
+        assertEquals(100,telecommande.getAppareil(0).getIntensite(),"intensite doit etre a 100");
     }
 
 }

@@ -47,6 +47,10 @@ public class Telecommande {
         }
     }
 
+    public Appareil getAppareil(int i){
+        return (this.appareils.get(i));
+    }
+
     public String toString(){
         String s = "";
         for(int i = 0; i < this.nAppareils(); i++){
