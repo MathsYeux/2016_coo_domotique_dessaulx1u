@@ -1,7 +1,6 @@
 package com.example.td1_dessaulx;
 
 public class Lampe extends Appareil {
-    private int intensite = 0;
     String nom;
 
     public Lampe(String n){
@@ -12,7 +11,6 @@ public class Lampe extends Appareil {
         return (this.nom + " : " + this.intensite);
     }
 
-    @Override
     public void allumer () {
         this.intensite = 100;
     }

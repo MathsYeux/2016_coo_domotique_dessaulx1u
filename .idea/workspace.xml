@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ffdbba7-abe6-4c95-af9c-ec9dee768cfb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TD1_Dessaulx/src/main/java/com/example/td1_dessaulx/Lampe.java" beforeDir="false" afterPath="$PROJECT_DIR$/TD1_Dessaulx/src/main/java/com/example/td1_dessaulx/Lampe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TD1_Dessaulx/src/main/java/com/example/td1_dessaulx/Telecommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/TD1_Dessaulx/src/main/java/com/example/td1_dessaulx/Telecommande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TD1_Dessaulx/src/test/java/com/example/LampeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TD1_Dessaulx/src/test/java/com/example/LampeTest.java" afterDir="false" />
@@ -31,6 +32,78 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager" selected="JUnit.TestTelecommande">
+    <configuration name="LampeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TD1_Dessaulx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LampeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LampeTest.testToString_allumee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TD1_Dessaulx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LampeTest" />
+      <option name="METHOD_NAME" value="testToString_allumee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LampeTest.testeteindre_allumee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TD1_Dessaulx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.LampeTest" />
+      <option name="METHOD_NAME" value="testeteindre_allumee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTelecommande" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TD1_Dessaulx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestTelecommande" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestTelecommande" />
+        <item itemvalue="JUnit.LampeTest" />
+        <item itemvalue="JUnit.LampeTest.testeteindre_allumee" />
+        <item itemvalue="JUnit.LampeTest.testToString_allumee" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652260478708</updated>
-      <workItem from="1652260479942" duration="247000" />
+      <workItem from="1652260479942" duration="680000" />
     </task>
     <servers />
   </component>

@@ -86,7 +86,7 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1 : 0",r,"affichage devrait etre off");
+		assertEquals("lampe1 : 0",r,"affichage devrait etre 0");
 	}
 
 	@Test
@@ -102,7 +102,7 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1 : 0",r,"affichage devrait etre off");
+		assertEquals("lampe1 : 100",r,"affichage devrait etre 100");
 
 	}
 

@@ -28,12 +28,12 @@ public class Telecommande {
         this.appareils.add(a);
     }
 
-    public void activerAppareil(int indiceLampe){
-        this.appareils.get(indiceLampe).allumer();
+    public void activerAppareil(int indiceAppareil){
+        this.appareils.get(indiceAppareil).allumer();
     }
 
-    public void desactiverAppareil(int indiceLampe){
-        this.appareils.get(indiceLampe).eteindre();
+    public void desactiverAppareil(int indiceAppareil){
+        this.appareils.get(indiceAppareil).eteindre();
     }
 
     public void activerTout(){
