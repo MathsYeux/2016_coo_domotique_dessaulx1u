@@ -14,7 +14,7 @@ public class TestTelecommande {
 
         assertTrue(telecommande.estVide(),"lampes doit etre vide");
 
-        telecommande.ajouterLampe(l1);
+        telecommande.ajouterAppareil(l1);
 
         assertFalse(telecommande.estVide(),"lampes ne doit pas etre vide");
     }
@@ -23,28 +23,29 @@ public class TestTelecommande {
     public void test02_deuxiemeajout(){
         Telecommande telecommande = new Telecommande();
         Lampe l1 = new Lampe("lampe1");
-        telecommande.ajouterLampe(l1);
+        telecommande.ajouterAppareil(l1);
 
-        assertEquals(1,telecommande.nLampes(),"il doit y avoir 1 lampe");
+        assertEquals(1,telecommande.nAppareils(),"il doit y avoir 1 lampe");
 
         Lampe l2 = new Lampe("lampe2");
-        telecommande.ajouterLampe(l2);
+        telecommande.ajouterAppareil(l2);
 
-        assertEquals(2,telecommande.nLampes(),"il doit y avoir 2 lampe");
+        assertEquals(2,telecommande.nAppareils(),"il doit y avoir 2 lampe");
     }
 
     @Test
     public void test03_activationLampePos0(){
         Telecommande telecommande = new Telecommande();
         Lampe l1 = new Lampe("lampe1");
-        telecommande.ajouterLampe(l1);
+        telecommande.ajouterAppareil(l1);
         telecommande.activerLampe(0);
 
-        assertEquals(1,telecommande.nLampes(),"il doit y avoir 1 lampe");
+        assertEquals(1,telecommande.nAppareils(),"il doit y avoir 1 lampe");
 
         Lampe l2 = new Lampe("lampe2");
-        telecommande.ajouterLampe(l2);
+        telecommande.ajouterAppareil(l2);
 
-        assertEquals(2,telecommande.nLampes(),"il doit y avoir 2 lampe");
+        assertEquals(2,telecommande.nAppareils(),"il doit y avoir 2 lampe");
     }
+
 }

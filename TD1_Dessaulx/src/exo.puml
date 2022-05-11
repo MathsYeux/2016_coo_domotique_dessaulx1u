@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class EmploiDuTemps
+class Creneau
+class Date
+class Universite
+interface Personne
+class GroupeEtudiants
+class Matiere
+class Salle
+class Etudiant
+class Enseignant
+
+Creneau "0..1"<-- "0..*"EmploiDuTemps : -creneaux
+Date "1"<-- "0..*"Creneau : -date
+Salle "1"<-- "0..*"Creneau : -salle
+Matiere "1"<-- "0..*"Creneau : -matiere
+GroupeEtudiants "1"<-- "0..*"Creneau : -groupe
+Personne <|.. Enseignant
+Personne <|.. Etudiant
+Personne "0..*"<-- "1"Universite : -personnes
+Matiere "1..*"<-- "0..1"Enseignant : -matieres
+Etudiant "1"<-- "1..*"GroupeEtudiants : -etudiants
+Enseignant "1"<-- "0..*"Creneau : -enseignant
+
+
+@enduml

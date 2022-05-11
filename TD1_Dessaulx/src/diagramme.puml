@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Lampe
+class Telecommande
+
+Lampe "*" <-- Telecommande : -lampes
+
+
+@enduml

@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Telecommande {
-    private ArrayList<Lampe> lampes;
+    private ArrayList<Appareil> appareils;
 
     public boolean estVide(){
-        return (this.lampes.isEmpty());
+        return (this.appareils.isEmpty());
     }
 
-    public int nLampes(){
+    public int nAppareils(){
         int i = 0;
-        Iterator iterateur = this.lampes.iterator();
+        Iterator iterateur = this.appareils.iterator();
         while (iterateur.hasNext()) {
             i += 1;
             iterateur.next();
@@ -21,41 +21,38 @@ public class Telecommande {
     }
 
     public Telecommande(){
-        this.lampes = new ArrayList<Lampe>();
+        this.appareils = new ArrayList<Appareil>();
     }
 
-    public void ajouterLampe(Lampe l){
-        this.lampes.add(l);
+    public void ajouterAppareil(Appareil a){
+        this.appareils.add(a);
     }
 
     public void activerLampe(int indiceLampe){
-        this.lampes.get(indiceLampe).allumer();
+        this.appareils.get(indiceLampe).allumer();
     }
 
     public void desactiverLampe(int indiceLampe){
-
+        this.appareils.get(indiceLampe).eteindre();
     }
 
     public void activerTout(){
-        if (this.lampes.isEmpty()){
+        if (this.appareils.isEmpty()){
             throw new Error("Aucune lampe reliee a la telecommande");
         }else {
             boolean trouve = false;
-            for(int i = 0; i < this.nLampes(); i++){
-                this.lampes.get(i).allumer();
+            for(int i = 0; i < this.nAppareils(); i++){
+                this.appareils.get(i).allumer();
             }
         }
     }
 
     public String toString(){
         String s = "";
-        for(int i = 0; i < this.nLampes(); i++){
-            s += this.lampes.get(i).toString();
+        for(int i = 0; i < this.nAppareils(); i++){
+            s += this.appareils.get(i).toString();
         }
         return ("");
     }
 
-    public static void main(String[] args) {
-        throw new Error("code non ecrit");
-    }
 }

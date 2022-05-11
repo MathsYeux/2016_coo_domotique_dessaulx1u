@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.td1_dessaulx.Lampe;
+import com.example.td1_dessaulx.Telecommande;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,8 +20,8 @@ public class LampeTest {
 		Lampe l = new Lampe("lampe1");
 
 		// verification
-		boolean res = l.isAllume();
-		assertFalse(res, "une nouvelle lampe devrait etre eteinte");
+		int res = l.getIntensite();
+		assertEquals(res,0, "une nouvelle lampe devrait etre eteinte");
 	}
 
 
@@ -36,8 +37,8 @@ public class LampeTest {
 		l.allumer();
 
 		// verification
-		boolean res = l.isAllume();
-		assertTrue(res, "apres allumer, la lampe devrait etre allumee");
+		int res = l.getIntensite();
+		assertEquals(10, res, "apres allumer(), la lampe devrait etre allumee");
 	}
 
 	@Test
@@ -47,14 +48,13 @@ public class LampeTest {
 	public void testAllumer_allumee() {
 		// preparation des donnees
 		Lampe l = new Lampe("lampe1");
-		l.allumer();
 
 		//methode testee
 		l.allumer();
 
 		// verification
-		boolean res = l.isAllume();
-		assertTrue(res,"apres allumer, la lampe devrait etre allumee");
+		int res = l.getIntensite();
+		assertEquals(10,res,"apres allumer, la lampe devrait etre allumee");
 	}
 
 	@Test
@@ -70,8 +70,8 @@ public class LampeTest {
 		l.eteindre();
 
 		// verification
-		boolean res = l.isAllume();
-		assertFalse(res,"apres eteindre, la lampe devrait etre eteinte");
+		int res = l.getIntensite();
+		assertEquals(0, res,"apres eteindre, la lampe devrait etre eteinte");
 	}
 
 	@Test
@@ -86,7 +86,7 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1 : Off",r,"affichage devrait etre off");
+		assertEquals("lampe1 : 0",r,"affichage devrait etre off");
 	}
 
 	@Test
@@ -102,7 +102,7 @@ public class LampeTest {
 		String r=""+l;
 
 		//verification
-		assertEquals("lampe1 : On",r,"affichage devrait etre off");
+		assertEquals("lampe1 : 0",r,"affichage devrait etre off");
 
 	}
 
